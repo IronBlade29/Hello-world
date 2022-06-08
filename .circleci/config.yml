@@ -8,7 +8,7 @@ jobs:
            password: $DOCKERHUB_PASSWORD
     steps:
       -checkout
-      -run: echo " A first hello"
+      -run: echo "A first hello"
       -run: sleep 25
   two:
     docker:
@@ -18,7 +18,7 @@ jobs:
           password: $DOCKERHUB_PASSWORD
     steps:
       -checkout
-      -run: echo"HI"
+      -run: echo "A more familiar hi"
       -run: sleep 15
 workflows:
   version:2
